@@ -1,22 +1,22 @@
 # A WordPress Plugin Developers VVV
 
-This is an [auto-site setup](https://github.com/Varying-Vagrant-Vagrants/VVV/wiki/Auto-site-Setup) designed to be used with [Varying Vagrants Vagrant](https://github.com/Varying-Vagrant-Vagrants/VVV) for developing plugins.
+This is an [auto-site setup](https://github.com/Varying-Vagrant-Vagrants/VVV/wiki/Auto-site-Setup) designed to be used with [Varying Vagrants Vagrant](https://github.com/Varying-Vagrant-Vagrants/VVV) for development on the Yoast VideoSEO plugin.
 
 ## To get started:
 
 1. Setup [Varying Vagrant Vagrants](https://github.com/Varying-Vagrant-Vagrants/VVV) (If you don't already have it)
-2. Clone this repo into the www directory of your Vagrant as www/wp-tutorial
-3. Update to a [release tag](https://github.com/jrfnl/wordpress-plugins-tutorial/releases) to keep stable
+2. Clone this repo into the www directory of your Vagrant as www/videoseo
+3. Update to a [release tag](https://github.com/yoast/videoseo-vvv/releases) to keep stable
 4. If your Vagrant is running, from the Vagrant directory run `vagrant halt`
 5. Followed by `vagrant up --provision`.
 
 Perhaps a cup of tea or coffee now? The provisioning may take a while.
 
-Then you can visit [http://wptutorial.dev/](http://wptutorial.dev/) to start developing plugins.
+Then you can visit [http://videoseo.dev/](http://videoseo.dev/) to start developing plugins.
 
 ## To start over (clean development environment):
 
-You can do it the soft way using (I know it's long, Text Expander?) `vagrant ssh -c 'cd /home/vagrant/www/wp-tutorial/ && rm -Rf htdocs/ && sh vvv-init.sh'`. Or, you can do it the hard way `vagrant reload --provision` and get a cup of coffee.
+You can do it the soft way using (I know it's long, Text Expander?) `vagrant ssh -c 'cd /home/vagrant/www/videoseo/ && rm -Rf htdocs/ && sh vvv-init.sh'`. Or, you can do it the hard way `vagrant reload --provision` and get a cup of coffee.
 
 ## Dependencies
 
@@ -27,16 +27,15 @@ You can do it the soft way using (I know it's long, Text Expander?) `vagrant ssh
 
 - Installs WordPress
 - Installs a bunch of developer plugins
-- Installs a best practice example plugin
-- Installs some plugins which can benefit from some loving care
+- Installs a bunch of plugins the VideoSEO plugin supports (or should support)
 
 ## Credentials and Such
 
-### WP Tutorial
+### VideoSEO
 
 * Username: `admin`
 * Password: `password`
-* Login: [login](http://wptutorial.dev/wp-admin)
+* Login: [login](http://videoseo.dev/wp-admin)
 
 ### MySQL Root
 
@@ -56,4 +55,4 @@ _________________________
 
 # Credits
 
-Inspired by and based on https://github.com/aubreypwd/wordpress-themereview-vvv
+Based on https://github.com/jrfnl/wordpress-plugins-tutorial
